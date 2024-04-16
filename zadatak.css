@@ -1,0 +1,732 @@
+/* ----------BODY---------- */
+
+body
+{
+    margin: 0;
+}
+
+nav
+{
+    background-color: white;
+    height: 80px;   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.Navbar
+{
+    margin: 0px;    /* Centriranje navigation bara */
+    height: 69.33px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    left: 40px;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.Navbar img
+{
+    height: 40px;
+    width:186.67px;
+}
+
+.Navbar ul
+{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
+.Navbar ul li
+{
+    margin: 15px;
+}
+
+.Navbar ul li a
+{
+    color: #1C1E53;
+    text-decoration: none;  /* Removes underlines which are there by default */
+    height: 40px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+button
+{
+    color: #5E3BEE;
+    background-color: #FFFFFF;
+    cursor: pointer;    /* Displays hand on hover, instead of arrow by default */
+    font-family: 'Roboto';
+    width: 100px;
+    height: 40px;
+    line-height: 32px;
+    font-weight: 400;
+    border-width: 1px;
+    border-color: #5E3BEE;
+    border-radius: 3px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+button:hover
+{
+    color: white;
+    background-color: #5E3BEE;
+}
+
+
+
+/* ----------HEADER---------- */
+
+
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5FCFF;
+}
+
+.home-text,.home-image
+{
+    flex-grow: 1;
+    max-width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.home-image img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+h3
+{
+    font-family: "Roboto";
+    font-size: 21.33px;
+    font-weight: 600;
+    line-height: 32px;
+    color:#1C1E53;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1
+{
+    font-family: 'Roboto';
+    margin: 0;
+    font-size: 74.67px;
+    font-weight: 700;
+    line-height: 89.6px;
+    color:#1C1E53;
+}
+
+h3:nth-child(3){
+    font-weight: 400;
+}
+
+.highlight
+{
+    color: #5E3BEE
+}
+
+.home-text button
+{
+    background-color: #5E3BEE;
+    color: white;
+}
+
+.home-text button:hover
+{
+    background-color: white;
+    color: #5E3BEE;
+}
+
+
+
+/* ----------My Expertise---------- */
+
+
+.MyExpertise
+{
+    padding: 100px 40px 100px 40px;
+}
+
+.MyExpertise h3,
+.MyExpertise h2
+{
+    margin: 0;
+}
+
+.MyExpertise h3{
+    margin-bottom:20px;
+}
+
+h2
+{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76.8px;
+}
+
+.Portfolio
+{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.Portfolio ul
+{
+    padding: 0;
+    margin:0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Portfolio ul li
+{
+    flex-grow: 1;
+    max-width: 50%;
+    padding: 10px;
+    margin: 40px;
+    background-color: #F5FCFF;
+    border-radius: 10px;
+    padding-bottom: 20px; /* Adjust as needed */
+    border-bottom: 2px solid transparent; 
+}
+
+.MyExpertise li:hover
+{
+    border-bottom-color:#5E3BEE;
+    border-width: 5px;
+}
+
+.Portfolio ul li:first-child{
+    margin-left: 0px;
+}
+
+.Portfolio ul li:last-child{
+    margin-right: 0px;
+}
+
+.Portfolio ul li img{
+    margin: 10px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 15%;
+    height: auto;
+}
+
+
+
+/* ----------About Me---------- */
+
+.AboutMe
+{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #FFFFFF;
+    height:800px;
+    position: relative;
+    border-bottom: 2px solid #5E3BEE;
+}
+
+.AboutImage,
+.AboutText
+{
+    flex-grow:1;
+    max-width: 60%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.AboutImage
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.AboutImage img
+{
+    width: Auto; 
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    padding-right: 50px;
+}
+
+.AboutText
+{
+    height:50%;
+    align-self: center;
+}
+
+.AboutText h3:nth-child(4)      /* Utjece na zadnji odjeljak (Sit turpis pretium eget maescenas) */
+{
+    font-weight: 400;
+}
+
+
+
+/* ----------My Portfolio---------- */
+
+
+.MyPortfolio
+{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.PortfolioHeader
+{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;      /* Odvoji button od teksta My Portfolio */
+    align-items: center;
+}
+
+.PortfolioHeader h2,
+.PortfolioHeader h3
+{
+    margin:0px;
+}
+
+.PortfolioHeader button
+{
+    color: #FFFFFF;
+    background-color: #E62872;
+    display: flex;
+    justify-content: center; /* Centrira tekst horizontalno */
+    align-items: center; /* Centrira tekst vertikalno */
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none; /* Brise border koji po defaultu postoji */
+}
+
+.PortfolioHeader button img
+{
+    height:25px;
+    width:25px;
+    margin-right:20px;
+}
+
+.Cards ul
+{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin-top:100px;
+}
+
+.Cards li
+{
+    margin: 40px;       /* Razmak izmedu boxova (vrijedi za svaki box jer uzimamo sve <li> elemente)*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Dodaje sjenu box-u */
+}
+
+.Cards li:first-child
+{
+    margin-left: 0px;
+}
+
+.Cards li:last-child
+{
+    margin-right: 0px;
+}
+
+.Cards li img   /* Vrijedi za sve slike (iz svakog box-a) */
+{
+    width: 100%; /* Set the width of the images to 100% of their container */
+    height: 100%; /* Set the height of the images to 100% of their container */
+    object-fit: cover; 
+}
+
+.Cards li h3
+{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.Cards li button
+{
+    color: #1C1E53;
+    position:relative;      /* Relativno u odnosu na box, da je absolute View In Dribbble bi bio van boxa */
+    margin-left: 25px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 40px;
+    text-align: left;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-radius: 0px;
+    border-color: #5E3BEE;
+}
+
+.Cards li button:hover
+{
+    background-color: #5E3BEE;
+    color:#FFFFFF;
+}
+
+
+
+/* ----------Customer testimonials---------- */
+
+.Testimonial
+{
+    background-color: #F5FCFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 100px;
+}
+
+.Testimonial h3,
+.Testimonial h2
+{
+    margin: 0px;
+}
+
+.Testimonial ul
+{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px;
+    margin-top:100px;
+    list-style: none;
+}
+
+.Testimonial li
+{
+    margin: 50px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px solid #006B6A;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:self-start;         /* Aligna person img i tekst od persona */
+}
+
+.Testimonial li:first-child
+{
+    margin-left: 0px;
+}
+
+.Testimonial li:last-child
+{
+    margin-right: 0px;
+}
+
+.Testimonial li img
+{
+    width: 30%;
+    height: auto;
+}
+
+.person
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;;
+}
+
+.person img
+{
+    width:100px;
+    margin-right: 20px;
+}
+
+.Testimonial li h3
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.person-info
+{
+    flex-grow: 1;
+}
+
+.person-info h4
+{
+    margin:0px;
+    padding:0px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-family:"Roboto";
+    font-size: 20px;
+}
+
+.person h3
+{
+    display:block
+}
+
+.person h2
+{
+    font-size: smaller;
+}
+
+.Testimonial h3,
+.Testimonial h4:nth-child(2)
+{
+    font-weight: 400;
+}
+
+
+
+/* ----------Contact me---------- */
+
+.Contact-Me
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    padding-top: 100px;
+}
+
+.Section-Title h3,
+.Section-Title h2
+{
+    margin: 0;
+    text-align: center;
+    padding-bottom: 50px;   /* Razmak izmedu h3 i h2 20 px od dolje */
+}
+
+.Form
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; /* Adjust the max-width as needed */
+    width: 100%; /* Ensure the form takes up the available width */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-top:50px;
+}
+
+.form-group
+{
+    margin-bottom: 10px;
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.name-group
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-group .form-group
+{
+    width: calc(50% - 7.5px);
+}
+
+.topic-group
+{
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+.topic-group .form-group
+{
+    width: calc(100% - 15px);
+}
+
+.message-group
+{
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+.message-group .form-group
+{
+    width: calc(100% - 38px);
+}
+
+.contact-info-group
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.contact-info-group .form-group
+{
+    width: calc(50% - 7.5px);
+    
+    /* Adjust the width as needed */
+}
+
+
+label
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #5E3BEE;
+    resize: none;
+}
+
+select
+{
+    background-color: #FFFFFF;
+}
+
+.checkbox-group
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.button-group .form-group
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ----------Footer---------- */
+
+
+footer
+{
+    background-color: #F5FCFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:50px;
+}
+
+.footer-up
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:50px 40px 50px 40px;
+    background-color: #F5FCFF; 
+    width: calc(100% - 75px)
+}
+
+.footer-up img
+{
+    height: 40px;
+    width: 186.67px;
+}
+
+.footer-up ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-up ul li
+{
+    margin: 0 10px;
+}
+
+.footer-up ul li a
+{
+    color: #1C1E53;
+    text-decoration: none;
+    height: 40px; 
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.footer-up .social-media img
+{
+    width:20px;
+    height:20px;
+    margin-left: 10px;
+}
+
+.footer-down
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5FCFF; 
+    width: calc(100% - 75px);
+    border-top: 1px solid #1C1E53;
+    margin-bottom:50px;
+    padding-top:25px;
+}
+
+.footer-down ul
+{
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:0px;
+    margin:0px;
+}
+
+.footer-down ul li
+{
+    margin: 0 10px;
+}
+
+.footer-down ul li a
+{
+    color: #1C1E53;
+    text-decoration: none;
+    height: 40px; 
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+a 
+{
+    text-decoration: none;
+}
